@@ -1,5 +1,5 @@
 server:
-  port: ??
+  port: 8080
 spring:
   cache:
     redis:
@@ -8,17 +8,17 @@ spring:
     name: example
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/*****?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: ??
-      password: ??
+      url: jdbc:mysql://localhost:3306/oranges?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: wn204420.
   main:
     banner-mode: off
   data:
     redis:
-      host: ??
-      port: ??
-      database: ??
-      password: ??
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      password: wn204420.
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
@@ -28,8 +28,8 @@ mybatis-plus:
       id-type: ASSIGN_ID
     banner: false
 Utils:
-  accessKeyId: ?????
-  accessKeySecret: ?????
+  accessKeyId:
+  accessKeySecret:
 logging:
   level:
     web: WARN

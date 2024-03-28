@@ -1,0 +1,36 @@
+server:
+  port: ??
+spring:
+  cache:
+    redis:
+      time-to-live: 1800000
+  application:
+    name: example
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/*****?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ??
+      password: ??
+  main:
+    banner-mode: off
+  data:
+    redis:
+      host: ??
+      port: ??
+      database: ??
+      password: ??
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+    banner: false
+Utils:
+  accessKeyId: ?????
+  accessKeySecret: ?????
+logging:
+  level:
+    web: WARN
+
